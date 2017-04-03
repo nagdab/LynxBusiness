@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		63488A6849D60F4B0CFF941E /* Pods_LynxBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20B63A3C0EB5B3F43B57533 /* Pods_LynxBusiness.framework */; };
+		DA451F5E1E80305F007C2370 /* CouponConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA451F5D1E80305F007C2370 /* CouponConfirmationViewController.swift */; };
+		DA451F601E803312007C2370 /* CouponHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA451F5F1E803312007C2370 /* CouponHistoryViewController.swift */; };
+		DAA7C2221E5F624A00C95FCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7C2211E5F624A00C95FCC /* LoginViewController.swift */; };
+		DAA7C2251E5F74C800C95FCC /* BottomTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7C2241E5F74C800C95FCC /* BottomTabController.swift */; };
+		DAF001FE1E6CC9FB007FA827 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF001FD1E6CC9FB007FA827 /* SettingsViewController.swift */; };
+		DAF002001E6CD2CF007FA827 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF001FF1E6CD2CF007FA827 /* Business.swift */; };
+		DAF002021E6DCBED007FA827 /* MakeCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF002011E6DCBED007FA827 /* MakeCouponViewController.swift */; };
 		E242A4711E5F5E780047E602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242A4701E5F5E780047E602 /* AppDelegate.swift */; };
-		E242A4731E5F5E780047E602 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242A4721E5F5E780047E602 /* ViewController.swift */; };
+		E242A4731E5F5E780047E602 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242A4721E5F5E780047E602 /* MainViewController.swift */; };
 		E242A4761E5F5E780047E602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E242A4741E5F5E780047E602 /* Main.storyboard */; };
 		E242A4781E5F5E780047E602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E242A4771E5F5E780047E602 /* Assets.xcassets */; };
 		E242A47B1E5F5E780047E602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E242A4791E5F5E780047E602 /* LaunchScreen.storyboard */; };
@@ -47,9 +54,17 @@
 		915D3061BBCAC4B26494A441 /* Pods-LynxBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxBusiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxBusiness/Pods-LynxBusiness.release.xcconfig"; sourceTree = "<group>"; };
 		A20B63A3C0EB5B3F43B57533 /* Pods_LynxBusiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxBusiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CA69BA220B957CFEEE0628 /* Pods-LynxBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxBusiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LynxBusiness/Pods-LynxBusiness.debug.xcconfig"; sourceTree = "<group>"; };
+		DA451F5D1E80305F007C2370 /* CouponConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponConfirmationViewController.swift; sourceTree = "<group>"; };
+		DA451F5F1E803312007C2370 /* CouponHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponHistoryViewController.swift; sourceTree = "<group>"; };
+		DAA7C2211E5F624A00C95FCC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DAA7C2231E5F6EC300C95FCC /* LynxBusiness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LynxBusiness.entitlements; sourceTree = "<group>"; };
+		DAA7C2241E5F74C800C95FCC /* BottomTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomTabController.swift; sourceTree = "<group>"; };
+		DAF001FD1E6CC9FB007FA827 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DAF001FF1E6CD2CF007FA827 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		DAF002011E6DCBED007FA827 /* MakeCouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeCouponViewController.swift; sourceTree = "<group>"; };
 		E242A46D1E5F5E780047E602 /* LynxBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LynxBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E242A4701E5F5E780047E602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E242A4721E5F5E780047E602 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E242A4721E5F5E780047E602 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E242A4751E5F5E780047E602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E242A4771E5F5E780047E602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E242A47A1E5F5E780047E602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,10 +148,11 @@
 		E242A46F1E5F5E780047E602 /* LynxBusiness */ = {
 			isa = PBXGroup;
 			children = (
-				E242A4A51E5F5F960047E602 /* models */,
+				DAA7C2231E5F6EC300C95FCC /* LynxBusiness.entitlements */,
+				E242A4A51E5F5F960047E602 /* Models */,
 				E242A4701E5F5E780047E602 /* AppDelegate.swift */,
-				E242A4A31E5F5F7F0047E602 /* controllers */,
-				E242A4A41E5F5F8C0047E602 /* layouts */,
+				E242A4A31E5F5F7F0047E602 /* Controllers */,
+				E242A4A41E5F5F8C0047E602 /* Layouts */,
 				E242A4771E5F5E780047E602 /* Assets.xcassets */,
 				E242A47C1E5F5E780047E602 /* Info.plist */,
 				E242A49E1E5F5F360047E602 /* GoogleService-Info.plist */,
@@ -163,29 +179,36 @@
 			path = LynxBusinessUITests;
 			sourceTree = "<group>";
 		};
-		E242A4A31E5F5F7F0047E602 /* controllers */ = {
+		E242A4A31E5F5F7F0047E602 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E242A4721E5F5E780047E602 /* ViewController.swift */,
+				E242A4721E5F5E780047E602 /* MainViewController.swift */,
+				DAA7C2211E5F624A00C95FCC /* LoginViewController.swift */,
+				DAA7C2241E5F74C800C95FCC /* BottomTabController.swift */,
+				DAF001FD1E6CC9FB007FA827 /* SettingsViewController.swift */,
+				DAF002011E6DCBED007FA827 /* MakeCouponViewController.swift */,
+				DA451F5D1E80305F007C2370 /* CouponConfirmationViewController.swift */,
+				DA451F5F1E803312007C2370 /* CouponHistoryViewController.swift */,
 			);
-			name = controllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
-		E242A4A41E5F5F8C0047E602 /* layouts */ = {
+		E242A4A41E5F5F8C0047E602 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
 				E242A4741E5F5E780047E602 /* Main.storyboard */,
 				E242A4791E5F5E780047E602 /* LaunchScreen.storyboard */,
 			);
-			name = layouts;
+			name = Layouts;
 			sourceTree = "<group>";
 		};
-		E242A4A51E5F5F960047E602 /* models */ = {
+		E242A4A51E5F5F960047E602 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E242A4AA1E5F5FC30047E602 /* Coupon.swift */,
+				DAF001FF1E6CD2CF007FA827 /* Business.swift */,
 			);
-			name = models;
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +282,13 @@
 				TargetAttributes = {
 					E242A46C1E5F5E780047E602 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5SH62QHDB9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					E242A4801E5F5E780047E602 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -377,8 +406,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E242A4A71E5F5FA60047E602 /* global.swift in Sources */,
-				E242A4731E5F5E780047E602 /* ViewController.swift in Sources */,
+				E242A4731E5F5E780047E602 /* MainViewController.swift in Sources */,
+				DA451F601E803312007C2370 /* CouponHistoryViewController.swift in Sources */,
+				DAF001FE1E6CC9FB007FA827 /* SettingsViewController.swift in Sources */,
+				DAA7C2251E5F74C800C95FCC /* BottomTabController.swift in Sources */,
 				E242A4711E5F5E780047E602 /* AppDelegate.swift in Sources */,
+				DA451F5E1E80305F007C2370 /* CouponConfirmationViewController.swift in Sources */,
+				DAF002001E6CD2CF007FA827 /* Business.swift in Sources */,
+				DAF002021E6DCBED007FA827 /* MakeCouponViewController.swift in Sources */,
+				DAA7C2221E5F624A00C95FCC /* LoginViewController.swift in Sources */,
 				E242A4AB1E5F5FC30047E602 /* Coupon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,11 +570,14 @@
 			baseConfigurationReference = D9CA69BA220B957CFEEE0628 /* Pods-LynxBusiness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5SH62QHDB9;
 				INFOPLIST_FILE = LynxBusiness/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BheefanProduction.LynxBusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -547,11 +586,14 @@
 			baseConfigurationReference = 915D3061BBCAC4B26494A441 /* Pods-LynxBusiness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5SH62QHDB9;
 				INFOPLIST_FILE = LynxBusiness/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BheefanProduction.LynxBusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
