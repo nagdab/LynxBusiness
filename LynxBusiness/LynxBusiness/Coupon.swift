@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import FirebaseAuth
 import Firebase
 
 class Coupon
