@@ -11,9 +11,8 @@ import UIKit
 
 class CouponConfirmationViewController: UIViewController {
     
-    @IBOutlet weak var backButton: UIBarButtonItem!
     
-    @IBAction func backPressed(_ sender: Any) {
+    @IBAction func back(_ sender: Any) {
         self.performSegue(withIdentifier: "backButton", sender: nil)
     }
     
