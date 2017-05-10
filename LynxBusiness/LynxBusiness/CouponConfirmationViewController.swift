@@ -12,7 +12,7 @@ import UIKit
 class CouponConfirmationViewController: UIViewController {
     
     
-    @IBAction func back(_ sender: Any) {
+    @IBAction func getBack(_ sender: Any) {
         self.performSegue(withIdentifier: "backButton", sender: nil)
     }
     

@@ -445,7 +445,10 @@
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kES-56-Nvi">
                                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="getBack:" destination="ump-Dl-MgD" eventType="touchUpInside" id="xmU-HA-mP3"/>
+                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="back:" destination="ump-Dl-MgD" id="as8-lq-a3N"/>
@@ -454,14 +457,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ke-DL-4p9">
-                                <rect key="frame" x="135" y="172" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="back:" destination="ump-Dl-MgD" eventType="touchUpInside" id="QNT-TD-QQ0"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
