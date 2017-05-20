@@ -24,26 +24,48 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         // 1
-        FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
+   /*     FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
             // 2
             if user != nil {
                 // 3
                 print("Hi")
                 self.performSegue(withIdentifier: self.loginToMain, sender: nil)
             }
-        }
+        } */
     }
     
     @IBAction func loginDidTouch(_ sender: Any) {
-        FIRAuth.auth()!.signIn(withEmail: LoginEmail.text!,
-                               password: LoginPassword.text!)
+        FIRAuth.auth()!.signIn(withEmail: LoginEmail.text!, password: LoginPassword.text!) {(user, error) in
+            if error != nil {
+                let alert = UIAlertController(title: "Error",
+                                              message: error?.localizedDescription,
+                                              preferredStyle: .alert)
+                
+                
+                let okayAction = UIAlertAction(title: "Okay",
+                                               style: .default)
+                
+                
+                
+                alert.addAction(okayAction)
+                
+                self.present(alert, animated: true, completion: nil)
+                
+                
+            }
+            else if user != nil {
+                print("NOT NIL")
+                self.performSegue(withIdentifier: self.loginToMain, sender: nil)
+            }
+        }
     }
     
     
     
     
     @IBAction func signUpDidTouch(_ sender: Any) {
-        let alert = UIAlertController(title: "Register",
+        performSegue(withIdentifier: "signupSegue", sender: nil)
+/*        let alert = UIAlertController(title: "Register",
                                       message: "Register",
                                       preferredStyle: .alert)
         
@@ -114,12 +136,11 @@ class LoginViewController: UIViewController {
         alert.addAction(saveAction)
         alert.addAction(cancelAction)
         
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil) */
     }
     
-    
 
-}
+    }
 
 extension LoginViewController: UITextFieldDelegate {
     

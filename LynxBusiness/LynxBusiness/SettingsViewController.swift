@@ -19,7 +19,10 @@ class SettingsViewController: UITableViewController {
     
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var addressText: UITextField!
+    @IBOutlet weak var emailText: UITextField!
     
+    @IBOutlet weak var newPwdText: UITextField!
+    @IBOutlet weak var newPwdConfirmationText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +33,28 @@ class SettingsViewController: UITableViewController {
             
             self.nameText.text = value["name"] as! String?
             self.addressText.text = value ["address"] as! String?
+            self.emailText.text = FIRAuth.auth()?.currentUser!.email!
         })
     }
+    
+    @IBAction func changePassword(_ sender: Any) {
+        
+ /*       if newPwdText.text == newPwdConfirmationText.text != "" {
+            let credential = FIREmailPasswordAuthProvider.credentialWithEmail((FIRAuth.auth()?.currentUser!.email!)!, password: newPwdText.text!)
+            
+            user?.reauthenticateWithCredential(credential) { error in
+                if let error = error {
+                    // An error happened.
+                } else {
+                    // User re-authenticated.
+                }
+            }
+        } */
+        
+        
+        
+    }
+    
     
     @IBAction func nameEdited(_ sender: Any) {
         
