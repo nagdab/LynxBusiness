@@ -20,6 +20,8 @@ class SignupViewController: UITableViewController, UIImagePickerControllerDelega
     @IBOutlet weak var createAccount: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
+    var businessImage: UIImage?
+    
     let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -43,6 +45,7 @@ class SignupViewController: UITableViewController, UIImagePickerControllerDelega
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView.contentMode = .scaleAspectFit
             imageView.image = image
+            businessImage = image
             print("PICKED IMAGE")
         } else{
             print("Something went wrong")
@@ -65,6 +68,29 @@ class SignupViewController: UITableViewController, UIImagePickerControllerDelega
                     let businessRef = ref.child(user!.uid)
                     let newBusiness = Business(name: self.Name.text!, address: self.Address.text!, photoURL: "https://drpma142ptgxf.cloudfront.net/assets/logo.svg")
                     businessRef.setValue(newBusiness.toStorage())
+                    
+                    
+                    let data = UIImageJPEGRepresentation(self.businessImage!, 0.8)!
+                    // set upload path
+                    let filePath = "\(FIRAuth.auth()!.currentUser!.uid)/\("userPhoto")"
+                    let metaData = FIRStorageMetadata()
+                    metaData.contentType = "image/jpg"
+                    self.storageRef.child(filePath).putData(data, metadata: metaData){(metaData,error) in
+                        if let error = error {
+                            print(error.localizedDescription)
+                            return
+                        }else{
+                            //store downloadURL
+                            let downloadURL = metaData!.downloadURL()!.absoluteString
+                            //store downloadURL at database
+                            self.databaseRef.child("users").child(FIRAuth.auth()!.currentUser!.uid).updateChildValues(["userPhoto": downloadURL])
+                        }
+                        
+                    }
+                    
+                    
+                    
+                    
                                         
                     FIRAuth.auth()!.signIn(withEmail: self.Email.text!, password: self.Password.text!)
                     self.performSegue(withIdentifier: "createdAccountSegue", sender: nil)

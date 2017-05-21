@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		63488A6849D60F4B0CFF941E /* Pods_LynxBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20B63A3C0EB5B3F43B57533 /* Pods_LynxBusiness.framework */; };
+		DA32DD991ED11E550042DE41 /* CouponHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32DD981ED11E550042DE41 /* CouponHistoryController.swift */; };
+		DA32DD9B1ED120B10042DE41 /* CouponHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32DD9A1ED120B10042DE41 /* CouponHistoryCell.swift */; };
 		DA451F5E1E80305F007C2370 /* CouponConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA451F5D1E80305F007C2370 /* CouponConfirmationViewController.swift */; };
 		DAA7C2221E5F624A00C95FCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7C2211E5F624A00C95FCC /* LoginViewController.swift */; };
 		DAA7C2251E5F74C800C95FCC /* BottomTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7C2241E5F74C800C95FCC /* BottomTabController.swift */; };
@@ -54,6 +56,8 @@
 		915D3061BBCAC4B26494A441 /* Pods-LynxBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxBusiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxBusiness/Pods-LynxBusiness.release.xcconfig"; sourceTree = "<group>"; };
 		A20B63A3C0EB5B3F43B57533 /* Pods_LynxBusiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxBusiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CA69BA220B957CFEEE0628 /* Pods-LynxBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxBusiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LynxBusiness/Pods-LynxBusiness.debug.xcconfig"; sourceTree = "<group>"; };
+		DA32DD981ED11E550042DE41 /* CouponHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponHistoryController.swift; sourceTree = "<group>"; };
+		DA32DD9A1ED120B10042DE41 /* CouponHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponHistoryCell.swift; sourceTree = "<group>"; };
 		DA451F5D1E80305F007C2370 /* CouponConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponConfirmationViewController.swift; sourceTree = "<group>"; };
 		DAA7C2211E5F624A00C95FCC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DAA7C2231E5F6EC300C95FCC /* LynxBusiness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LynxBusiness.entitlements; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				DAF001FD1E6CC9FB007FA827 /* SettingsViewController.swift */,
 				DAF002011E6DCBED007FA827 /* MakeCouponViewController.swift */,
 				DA451F5D1E80305F007C2370 /* CouponConfirmationViewController.swift */,
+				DA32DD981ED11E550042DE41 /* CouponHistoryController.swift */,
+				DA32DD9A1ED120B10042DE41 /* CouponHistoryCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -407,6 +413,7 @@
 			files = (
 				E242A4A71E5F5FA60047E602 /* global.swift in Sources */,
 				E242A4731E5F5E780047E602 /* MainViewController.swift in Sources */,
+				DA32DD991ED11E550042DE41 /* CouponHistoryController.swift in Sources */,
 				DAC7EDC01ED0E16D00E766E3 /* SignupViewController.swift in Sources */,
 				DAF001FE1E6CC9FB007FA827 /* SettingsViewController.swift in Sources */,
 				DAA7C2251E5F74C800C95FCC /* BottomTabController.swift in Sources */,
@@ -416,6 +423,7 @@
 				DAF002021E6DCBED007FA827 /* MakeCouponViewController.swift in Sources */,
 				DAA7C2221E5F624A00C95FCC /* LoginViewController.swift in Sources */,
 				E242A4AB1E5F5FC30047E602 /* Coupon.swift in Sources */,
+				DA32DD9B1ED120B10042DE41 /* CouponHistoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

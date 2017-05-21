@@ -19,22 +19,23 @@ class SettingsViewController: UITableViewController {
     
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var addressText: UITextField!
-    @IBOutlet weak var emailText: UITextField!
     
+    @IBOutlet weak var emailText: UILabel!
     @IBOutlet weak var newPwdText: UITextField!
     @IBOutlet weak var newPwdConfirmationText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let uid = FIRAuth.auth()?.currentUser!.uid
+        print(FIRAuth.auth()?.currentUser!)
         ref = FIRDatabase.database().reference(withPath: "business").child(uid!)
         ref!.observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as! [String : Any]
             
             self.nameText.text = value["name"] as! String?
             self.addressText.text = value ["address"] as! String?
-            self.emailText.text = FIRAuth.auth()?.currentUser!.email!
         })
+        self.emailText.text = FIRAuth.auth()?.currentUser!.email!
     }
     
     @IBAction func changePassword(_ sender: Any) {
