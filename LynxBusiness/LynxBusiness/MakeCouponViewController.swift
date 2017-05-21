@@ -17,16 +17,27 @@ class MakeCouponViewController: UITableViewController{
     
     
     @IBOutlet weak var discountText: UITextField!
+    
+    
+    
+    
+    
     @IBOutlet weak var totalText: UITextField!
     @IBOutlet weak var descriptionText: UITextView!
     @IBOutlet weak var endDate: UIDatePicker!
     @IBOutlet weak var submitButton: UIButton!
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        endDate.minimumDate = Date()
     }
+    
+    
+
     
     
     @IBAction func submitCoupon(_ sender: Any) {

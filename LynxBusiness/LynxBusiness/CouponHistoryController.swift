@@ -69,10 +69,11 @@ class CouponHistoryController: UITableViewController
         let coupon = coupons[indexPath.row]
         print(coupon)
         
-        cell.discription.text = coupon.disc
+        cell.desc.text = coupon.disc
         cell.date.text = dateToString(dateData: coupon.endDate)
         cell.numRemaining.text = String(coupon.numbersLeft)
         cell.coupon = coupon
+        cell.usedCoupons.text = String(coupon.totalStarted - coupon.numbersLeft)
         
         return cell
     }

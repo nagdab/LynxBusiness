@@ -10,6 +10,9 @@
 		63488A6849D60F4B0CFF941E /* Pods_LynxBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20B63A3C0EB5B3F43B57533 /* Pods_LynxBusiness.framework */; };
 		DA32DD991ED11E550042DE41 /* CouponHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32DD981ED11E550042DE41 /* CouponHistoryController.swift */; };
 		DA32DD9B1ED120B10042DE41 /* CouponHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32DD9A1ED120B10042DE41 /* CouponHistoryCell.swift */; };
+		DA32DD9D1ED1499F0042DE41 /* Lynx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA32DD9C1ED1499F0042DE41 /* Lynx.jpg */; };
+		DA32DD9E1ED1499F0042DE41 /* Lynx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA32DD9C1ED1499F0042DE41 /* Lynx.jpg */; };
+		DA32DD9F1ED1499F0042DE41 /* Lynx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA32DD9C1ED1499F0042DE41 /* Lynx.jpg */; };
 		DA451F5E1E80305F007C2370 /* CouponConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA451F5D1E80305F007C2370 /* CouponConfirmationViewController.swift */; };
 		DAA7C2221E5F624A00C95FCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7C2211E5F624A00C95FCC /* LoginViewController.swift */; };
 		DAA7C2251E5F74C800C95FCC /* BottomTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7C2241E5F74C800C95FCC /* BottomTabController.swift */; };
@@ -58,6 +61,7 @@
 		D9CA69BA220B957CFEEE0628 /* Pods-LynxBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxBusiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LynxBusiness/Pods-LynxBusiness.debug.xcconfig"; sourceTree = "<group>"; };
 		DA32DD981ED11E550042DE41 /* CouponHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponHistoryController.swift; sourceTree = "<group>"; };
 		DA32DD9A1ED120B10042DE41 /* CouponHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponHistoryCell.swift; sourceTree = "<group>"; };
+		DA32DD9C1ED1499F0042DE41 /* Lynx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Lynx.jpg; path = ../../../LynxStudent/LynxStudent/LynxStudent/Lynx.jpg; sourceTree = "<group>"; };
 		DA451F5D1E80305F007C2370 /* CouponConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponConfirmationViewController.swift; sourceTree = "<group>"; };
 		DAA7C2211E5F624A00C95FCC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DAA7C2231E5F6EC300C95FCC /* LynxBusiness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LynxBusiness.entitlements; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				E242A47C1E5F5E780047E602 /* Info.plist */,
 				E242A49E1E5F5F360047E602 /* GoogleService-Info.plist */,
 				E242A4A61E5F5FA60047E602 /* global.swift */,
+				DA32DD9C1ED1499F0042DE41 /* Lynx.jpg */,
 			);
 			path = LynxBusiness;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 			files = (
 				E242A47B1E5F5E780047E602 /* LaunchScreen.storyboard in Resources */,
 				E242A4781E5F5E780047E602 /* Assets.xcassets in Resources */,
+				DA32DD9D1ED1499F0042DE41 /* Lynx.jpg in Resources */,
 				E242A4761E5F5E780047E602 /* Main.storyboard in Resources */,
 				E242A49F1E5F5F360047E602 /* GoogleService-Info.plist in Resources */,
 			);
@@ -344,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA32DD9E1ED1499F0042DE41 /* Lynx.jpg in Resources */,
 				E242A4A01E5F5F360047E602 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA32DD9F1ED1499F0042DE41 /* Lynx.jpg in Resources */,
 				E242A4A11E5F5F360047E602 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

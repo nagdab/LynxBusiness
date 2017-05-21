@@ -40,17 +40,40 @@ class SettingsViewController: UITableViewController {
     
     @IBAction func changePassword(_ sender: Any) {
         
- /*       if newPwdText.text == newPwdConfirmationText.text != "" {
-            let credential = FIREmailPasswordAuthProvider.credentialWithEmail((FIRAuth.auth()?.currentUser!.email!)!, password: newPwdText.text!)
+        if newPwdText.text == newPwdConfirmationText.text && newPwdText.text != "" {
             
-            user?.reauthenticateWithCredential(credential) { error in
+            FIRAuth.auth()?.currentUser!.updatePassword(newPwdText.text!) { error in
                 if let error = error {
                     // An error happened.
+                    let alert = UIAlertController(title: "Error",
+                                                  message: error.localizedDescription,
+                                                  preferredStyle: .alert)
+                    
+                    
+                    let okayAction = UIAlertAction(title: "Okay",
+                                                   style: .default)
+                    
+                    
+                    
+                    alert.addAction(okayAction)
+                    
+                    self.present(alert, animated: true, completion: nil)
+                    
                 } else {
-                    // User re-authenticated.
+                    let alert = UIAlertController(title: "Password Changed",
+                                                   message: "The password change was successful.",
+                                                   preferredStyle: .alert)
+                    
+                    
+                    let okayAction = UIAlertAction(title: "Close",
+                                                   style: .default)
+                    
+                    alert.addAction(okayAction)
+                    
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
-        } */
+        }
         
         
         

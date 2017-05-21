@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C3FEF717F2031D32CCC0D3F011C31A5DF5A08012",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "07BDF64E636F23EED290F677B294A02A43D2F13A" : 9223372036854775807,
+    "C3FEF717F2031D32CCC0D3F011C31A5DF5A08012" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E6FE23CA-CB73-4D30-9059-87E9C0CF88A4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "07BDF64E636F23EED290F677B294A02A43D2F13A" : "LynxStudent\/",
+    "C3FEF717F2031D32CCC0D3F011C31A5DF5A08012" : "LynxBusiness\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LynxBusiness",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LynxBusiness\/LynxBusiness.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nagdab\/LynxStudent.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "07BDF64E636F23EED290F677B294A02A43D2F13A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nagdab\/LynxBusiness.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3FEF717F2031D32CCC0D3F011C31A5DF5A08012"
+    }
+  ]
+}

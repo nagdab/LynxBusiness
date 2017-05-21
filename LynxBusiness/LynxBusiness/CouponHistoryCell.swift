@@ -15,12 +15,13 @@ class CouponHistoryCell: UITableViewCell
 {
     var coupon : Coupon!
     
-    @IBOutlet weak var discription: UILabel!
+    @IBOutlet weak var desc: UILabel!
     
     @IBOutlet weak var numRemaining: UILabel!
     
     @IBOutlet weak var date: UILabel!
     
+    @IBOutlet weak var usedCoupons: UILabel!
     
     @IBAction func use(_ sender: Any)
     {
